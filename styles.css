@@ -1,0 +1,38 @@
+/* color variables */
+:root {
+    --blue: #009fe3;
+    --pink: #e6007e;
+    --purple: #745ba3;
+    --green: #339999;
+    --yellow: #fdc300;
+    --orange: #eb5d40;
+    --white: #ffffff;
+    --black: #1D1D1B;
+    /* light mode */
+    --primary-light: #e3e2e2;
+    --secondary-light: #d5d5d5;
+    /* dark mode */
+    --primary-dark: #22228b;
+    --secondary-dark: #1f1f6b;
+}
+
+.sen-normal {
+    font-family: "Sen", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.sen-bold {
+    font-family: "Sen", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.sen-semibold {
+    font-family: "Sen", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
