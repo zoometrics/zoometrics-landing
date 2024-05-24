@@ -44,7 +44,7 @@
             "density": "4.0"
         }
     ],
-    "start_url": "/zoometrics-landing/",
+    "start_url": "https://juanmata42.github.io/zoometrics-landing/",
     "background_color": "#ffffff",
     "display": "standalone",
     "scope": "/",
