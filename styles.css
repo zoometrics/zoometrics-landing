@@ -4,7 +4,7 @@
 */
 * {
     box-sizing: border-box;
-  -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 html,
@@ -150,6 +150,12 @@ a {
     cursor: pointer;
 }
 
+button {
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+
 /* variables */
 :root {
     /* colors */
@@ -205,7 +211,7 @@ a {
     background-color: var(--white);
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     padding-left: calc(((100vw - var(--large)) / 2) + 30px);
     padding-right: calc(((100vw - var(--large)) / 2) + 30px);
     padding-top: 20px;
@@ -341,6 +347,32 @@ a {
     background-repeat: no-repeat;
     background-position: 65%;
     height: 500px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: calc(((100vw - var(--large)) / 2) + 30px);
+    padding-right: calc(((100vw - var(--large)) / 2) + 30px);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: var(--black)
+}
+
+.innovation-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 50%;
+    background-color: rgb(213, 213, 213, 0.7);
+    padding: 20px;
+}
+
+.innovation-title {
+    font-size: 30px;
+}
+
+.innovation-text {
+    font-size: 20px;
+    text-align: justify;
 }
 
 .definition {
@@ -349,14 +381,72 @@ a {
     background-repeat: no-repeat;
     background-position: center;
     height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: calc(((100vw - var(--large)) / 2) + 30px);
+    padding-right: calc(((100vw - var(--large)) / 2) + 30px);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: var(--black);
+    position: relative;
+}
+
+.definition-img,
+.purpose-img {
+    height: auto;
+    max-width: 40%;
+}
+
+.definition-container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 60%;
+    background-color: rgb(213, 213, 213, 0.7);
+    padding: 20px;
+    flex-grow: 2;
+}
+.purpose-container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 60%;
+    padding: 20px;
+    flex-grow: 2;
+}
+
+.definition-title,
+.purpose-title {
+    font-size: 30px;
+}
+
+.definition-text,
+.purpose-text {
+    font-size: 20px;
+    text-align: justify;
+}
+
+b {
+    font-weight: 700;
 }
 
 .purpose {
-    background-image: url("./images/claroPersa.jpg");
+    background-color: var(--white);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: calc(((100vw - var(--large)) / 2) + 30px);
+    padding-right: calc(((100vw - var(--large)) / 2) + 30px);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: var(--black);
+    position: relative;
+    gap: 20px;
 }
 
 /* Footer styles */
@@ -475,6 +565,12 @@ a {
         padding: 20px;
     }
 
+    .innovation,
+    .definition,
+    .purpose {
+        padding: 20px;
+    }
+
     .main-footer {
         padding: 20px;
     }
@@ -482,6 +578,10 @@ a {
 
 /* Media query for 1280px header jump screen size */
 @media screen and (max-width: 1280px) {
+    .main-header {
+        justify-content: center;
+    }
+
     .main-body {
         padding-top: 150px;
     }
@@ -530,6 +630,41 @@ a {
 
     .main-body {
         padding-top: 60px;
+    }
+
+    .innovation,
+    .definition,
+    .purpose {
+        height: auto;
+    }
+    .purpose{
+        flex-direction: column;
+    }
+
+    .innovation-container,
+    .definition-container,
+    .purpose-container {
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    .innovation-title,
+    .definition-title,
+    .purpose-title {
+        font-size: 25px;
+    }
+
+    .innovation-text,
+    .definition-text,
+    .purpose-text {
+        font-size: 16px;
+    }
+
+    .definition-img {
+        display: none;
+    }
+    .purpose-img {
+        max-width: 100%;
     }
 
     .main-footer {
