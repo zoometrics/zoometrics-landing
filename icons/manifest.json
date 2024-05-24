@@ -47,7 +47,6 @@
     "start_url": "https://juanmata42.github.io/zoometrics-landing/",
     "background_color": "#ffffff",
     "display": "standalone",
-    "scope": "/",
     "theme_color": "#009fe3",
     "description": "Zoometrics Landing Page",
     "screenshots": [
