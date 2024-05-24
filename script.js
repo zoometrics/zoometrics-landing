@@ -12,3 +12,14 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 });
+// if the screen is resized, if the screen is bigger than 768px, the nav will be displayed
+window.addEventListener('resize', function () {
+    let checkbox = document.getElementById('menu_checkbox');
+    let nav = document.querySelector('.header-nav');
+    if (window.innerWidth > 768) {
+        nav.style.display = 'flex';
+        checkbox.checked = false;
+    } else {
+        nav.style.display = 'none';
+    }
+});

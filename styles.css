@@ -2,6 +2,9 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+* {
+    box-sizing: border-box;
+}
 
 html,
 body,
@@ -195,7 +198,10 @@ a {
 }
 
 .main-header {
-    position: sticky;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: var(--white);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -324,6 +330,10 @@ a {
 }
 
 /* main sections */
+.main-body {
+    padding-top: 120px;
+}
+
 .innovation {
     background-image: url("./images/cubosMMpersa.jpg");
     background-size: cover;
@@ -331,14 +341,16 @@ a {
     background-position: center;
     height: 500px;
 }
-.definition{
+
+.definition {
     background-image: url("./images/svg/Recurso\ 2.svg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     height: 500px;
 }
-.purpose{
+
+.purpose {
     background-image: url("./images/claroPersa.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -467,6 +479,13 @@ a {
     }
 }
 
+/* Media query for 1280px header jump screen size */
+@media screen and (max-width: 1280px) {
+    .main-body {
+        padding-top: 150px;
+    }
+}
+
 /* Media query for --mobile screen size */
 @media screen and (max-width: 768px) {
     .main-header {
@@ -501,11 +520,15 @@ a {
         position: absolute;
         height: 40px;
         width: 30px;
-        right: 20px;
+        right: 40px;
     }
 
     .main-header .header-nav .nav-link {
         padding: 5px;
+    }
+
+    .main-body {
+        padding-top: 60px;
     }
 
     .main-footer {
@@ -588,7 +611,7 @@ a {
 
     .hamburger-menu {
         position: relative;
-        right: 0;
+        right: 20px;
     }
 
     .footer-text {
