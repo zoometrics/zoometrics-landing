@@ -44,7 +44,7 @@
             "density": "4.0"
         }
     ],
-    "start_url": "/",
+    "start_url": "/zoometrics-landing/",
     "background_color": "#ffffff",
     "display": "standalone",
     "scope": "/",
