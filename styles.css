@@ -339,7 +339,7 @@ a {
     background-image: url("./images/cubosMMpersa.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: 65%;
     height: 500px;
 }
 
