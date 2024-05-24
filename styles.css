@@ -324,21 +324,21 @@ a {
 
 /* main sections */
 .innovation {
-    background-image: url("/images/cubosMMpersa.jpg");
+    background-image: url("./images/cubosMMpersa.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     height: 500px;
 }
 .definition{
-    background-image: url("/images/svg/Recurso\ 2.svg");
+    background-image: url("./images/svg/Recurso\ 2.svg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     height: 500px;
 }
 .purpose{
-    background-image: url("/images/claroPersa.jpg");
+    background-image: url("./images/claroPersa.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
