@@ -218,6 +218,7 @@ a {
     align-items: center;
     height: 100%;
     gap: 20px;
+    background-color: var(--white);
 }
 
 .main-header .header-nav .nav-link {
