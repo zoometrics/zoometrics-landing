@@ -218,6 +218,7 @@ button {
     padding-bottom: 20px;
     gap: 20px;
     flex-wrap: wrap;
+    z-index: 10;
 }
 
 .main-header .header-logo {
@@ -345,15 +346,14 @@ button {
     background-image: url("./images/cubosMMpersa.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: 65%;
-    height: 500px;
+    background-position: 65% 65%;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     padding-left: calc(((100vw - var(--large)) / 2) + 30px);
     padding-right: calc(((100vw - var(--large)) / 2) + 30px);
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 50px;
+    padding-bottom: 50px;
     color: var(--black)
 }
 
@@ -366,13 +366,23 @@ button {
     padding: 20px;
 }
 
-.innovation-title {
+.innovation-title,
+.definition-title,
+.purpose-title,
+.target-title {
     font-size: 30px;
 }
 
-.innovation-text {
+.innovation-text,
+.definition-text,
+.purpose-text,
+.target-text {
     font-size: 20px;
     text-align: justify;
+}
+
+b {
+    font-weight: 700;
 }
 
 .definition {
@@ -380,7 +390,6 @@ button {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 500px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -392,13 +401,13 @@ button {
     position: relative;
 }
 
-.definition-img,
-.purpose-img {
+.definition-img {
     height: auto;
     max-width: 40%;
 }
 
-.definition-container{
+.definition-container,
+.purpose-container {
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -407,36 +416,76 @@ button {
     padding: 20px;
     flex-grow: 2;
 }
-.purpose-container{
+
+.purpose-img {
+    height: auto;
+    max-width: 50%;
+}
+
+.target {
+    background-image: url("./images/svg/Recurso\ 2.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding-left: calc(((100vw - var(--large)) / 2) + 30px);
+    padding-right: calc(((100vw - var(--large)) / 2) + 30px);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: var(--black);
+    position: relative;
+    gap: 20px;
+}
+
+
+.target-card {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    max-width: 60%;
+    background-color: rgb(213, 213, 213, 0.7);
     padding: 20px;
+    width: 300px;
+    position: relative;
+    justify-content: space-between;
+    align-self: stretch;
+}
+
+.target-card-top {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.target-card-bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: space-between;
     flex-grow: 2;
 }
 
-.definition-title,
-.purpose-title {
-    font-size: 30px;
+.target-title {
+    text-align: center;
 }
 
-.definition-text,
-.purpose-text {
-    font-size: 20px;
-    text-align: justify;
-}
-
-b {
-    font-weight: 700;
+.target-link {
+    border: var(--black) 1px solid;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
 }
 
 .purpose {
+    background-image: url("./images/svg/Recurso\ 2.svg");
     background-color: var(--white);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 500px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -567,7 +616,8 @@ b {
 
     .innovation,
     .definition,
-    .purpose {
+    .purpose,
+    .target {
         padding: 20px;
     }
 
@@ -637,7 +687,8 @@ b {
     .purpose {
         height: auto;
     }
-    .purpose{
+
+    .purpose {
         flex-direction: column;
     }
 
@@ -663,6 +714,7 @@ b {
     .definition-img {
         display: none;
     }
+
     .purpose-img {
         max-width: 100%;
     }
@@ -748,6 +800,10 @@ b {
     .hamburger-menu {
         position: relative;
         right: 0;
+    }
+
+    .target-card {
+        width: 100%;
     }
 
     .footer-text {
