@@ -242,27 +242,27 @@ button {
     text-align: center;
 }
 
-.main-header .header-nav #definition-link:hover {
+.main-header .header-nav #definition-link:hover, .main-header .header-nav #definition-link.active {
     color: var(--blue);
 }
 
-.main-header .header-nav #volunteers-link:hover {
+.main-header .header-nav #volunteers-link:hover, .main-header .header-nav #volunteers-link.active {
     color: var(--purple);
 }
 
-.main-header .header-nav #city-hall-link:hover {
+.main-header .header-nav #city-hall-link:hover, .main-header .header-nav #city-hall-link.active {
     color: var(--yellow);
 }
 
-.main-header .header-nav #about-link:hover {
+.main-header .header-nav #about-link:hover, .main-header .header-nav #about-link.active {
     color: var(--orange);
 }
 
-.main-header .header-nav #blog-link:hover {
+.main-header .header-nav #blog-link:hover, .main-header .header-nav #blog-link.active {
     color: var(--pink);
 }
 
-.main-header .header-nav #contact-link:hover {
+.main-header .header-nav #contact-link:hover, .main-header .header-nav #contact-link.active{
     color: var(--green);
 }
 
@@ -343,7 +343,10 @@ button {
     padding-top: 120px;
     height: 100%;
 }
-
+.main-title{
+    font-size: 30px;
+    text-align: center;
+}
 .innovation {
     background-image: url("./images/cubosMMpersa.jpg");
     background-size: cover;
