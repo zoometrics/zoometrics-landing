@@ -1,0 +1,100 @@
+.app-preview {
+    background-image: url("../images/svg/Recurso\ 2.svg");
+    background-color: var(--white);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    padding-left: calc(((100vw - var(--large)) / 2) + 30px);
+    padding-right: calc(((100vw - var(--large)) / 2) + 30px);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: var(--black);
+    position: relative;
+    gap: 20px;
+    width: 100%;
+}
+
+.app-preview-img {
+    width: 50%;
+    height: 100%;
+}
+
+.app-preview-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.app-preview-container__top,
+.app-preview-container__bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+}
+
+.app-preview-text {
+    font-size: 20px;
+    text-align: justify;
+}
+
+.app-preview-title {
+    font-size: 30px;
+    text-align: center;
+}
+.login-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
+/* Media query for --large screen size */
+@media screen and (max-width: 1440px) {
+
+    .app-preview {
+        padding: 20px;
+    }
+}
+
+/* Media query for 1280px header jump screen size */
+@media screen and (max-width: 1280px) {}
+
+/* Media query for --mobile screen size */
+@media screen and (max-width: 768px) {
+    .app-preview {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .app-preview-container {
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    .app-preview-title {
+        font-size: 25px;
+    }
+
+    .app-preview-text {
+        font-size: 16px;
+    }
+
+    .app-preview-img {
+        width: 100%;
+    }
+
+}
+
+/* Media query for --mobile screen size */
+@media screen and (max-width: 480px) {}

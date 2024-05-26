@@ -473,11 +473,15 @@ b {
     text-align: center;
 }
 
-.target-link {
+.target-link, .button-link {
     border: var(--black) 1px solid;
     padding: 10px;
     width: 100%;
     text-align: center;
+}
+.icon-button{
+    width: auto;
+    height: 30px
 }
 
 .purpose {
@@ -795,11 +799,6 @@ b {
         padding: 10px;
         justify-content: center;
         align-items: center;
-    }
-
-    .hamburger-menu {
-        position: relative;
-        right: 0;
     }
 
     .target-card {

@@ -5,66 +5,215 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zoometrics</title>
-    <link rel="apple-touch-icon" sizes="57x57" href="icons/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="icons/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="icons/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="icons/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="icons/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="icons/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="icons/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="icons/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="icons/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="icons/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
-    <link rel="manifest" href="icons/manifest.json">
+    <link rel="apple-touch-icon" sizes="57x57" href="../icons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="../icons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../icons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../icons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../icons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../icons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../icons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../icons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../icons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="../icons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="../icons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../icons/favicon-16x16.png">
+    <link rel="manifest" href="../icons/manifest.json">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sen:wght@400..800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="stylesPart.css">
+    <link rel="stylesheet" href="../styles.css">
 </head>
 
 <body>
     <header class="main-header sen-normal">
-        <img class="header-logo" src="images/svg/logoiconos.svg" alt="Zoometrics logo" class="logo">
+        <img class="header-logo" src="../images/svg/logoiconos.svg" alt="Zoometrics logo" class="logo">
+        <div class="hamburger-menu sen-normal">
+            <input class="hamburguer-button" type="checkbox" id="menu_checkbox">
+            <label class="hamburguer-label" for="menu_checkbox">
+                <div></div>
+                <div></div>
+                <div></div>
+            </label>
+        </div>
         <nav class="header-nav">
-            <a class="header-link" href="#definition">
+            <a class="nav-link" href="../" id="definition-link">
                 ¿Qué es Meow Metrics?
             </a>
-            <a class="header-link" href="#volunteers-associations">
+            <a class="nav-link" href="../volunteers-associations/" id="volunteers-link">
                 Voluntarios y Asociaciones
             </a>
-            <a class="header-link" href="#city-hall">
+            <a class="nav-link" href="#top" id="city-hall-link">
                 Ayuntamientos
             </a>
-            <a class="header-link" href="#aboutUs">
+            <a class="nav-link" href="../about-us/" id="about-link">
                 Sobre nosotros
             </a>
-            <a class="header-link" href="#blog">
+            <a class="nav-link" href="../blog/" id="blog-link">
                 Blog
             </a>
-            <a class="header-link" href="#contact">
+            <a class="nav-link" href="../contact/" id="contact-link">
                 Contacto
             </a>
         </nav>
     </header>
-
-    <main>
-        <section>
-            <!-- Add your main content here -->
+    <main class="main-body">
+        <section class="innovation" id="innovation-section">
+            <div class="innovation-container">
+                <h2 class="innovation-title sen-bold">Innovación Tecnológica para Bienestar Animal</h2>
+                <p class="innovation-text sen-normal">
+                    Meow Metrics empodera a los voluntarios y Ayuntamientos con herramientas gratuitas para la gestión
+                    efectiva de colonias de gatos ferales.
+                </p>
+            </div>
+        </section>
+        <section class="definition" id="definition-section">
+            <img class="definition-img" src="./images/3gatos-removebg.png" alt="tres gatos">
+            <div class="definition-container">
+                <h2 class="definition-title sen-bold">¿Qué es Meow Metrics?</h2>
+                <p class="definition-text sen-normal">
+                    Meow Metrics es una plataforma de software pionera diseñada específicamente para transformar la
+                    gestión de colonias de gatos ferales en entornos urbanos.
+                </p>
+                <p class="definition-text sen-normal">
+                    Nuestra plataforma se erige como una herramienta indispensable para Ayuntamientos y voluntarios,
+                    facilitando una colaboración efectiva y un enfoque ético hacia el bienestar animal.
+                </p>
+                <p class="definition-text sen-normal">
+                    Con un corazón tecnológico que utiliza inteligencia artificial para análisis predictivo, Meow
+                    Metrics se posiciona en la vanguardia de las soluciones para ciudades inteligentes y comunidades
+                    comprometidas con el cuidado animal.
+                </p>
+            </div>
+        </section>
+        <section class="target" id="target-section">
+            <!-- <h2 class="target-title sen-bold">¿A quién está dirigido?</h2> -->
+            <div class="target-card">
+                <div class="target-card-top">
+                    <img class="target-img" src="./images/svg/voluntario.svg" alt="icono voluntario">
+                    <h3 class="target-title sen-bold">Voluntarios y Asociaciones</h3>
+                </div>
+                <div class="target-card-bottom">
+                    <p class="target-text sen-normal">
+                        Para aquellos comprometidos con el cuidado y bienestar de los gatos ferales, Meow Metrics
+                        ofrece una plataforma accesible y gratuita que permite registrar, monitorear y gestionar las
+                        colonias de manera efectiva
+                    </p>
+                    <a class="target-link sen-bold">Saber más</a>
+                </div>
+            </div>
+            <div class="target-card">
+                <div class="target-card-top">
+                    <img class="target-img" src="./images/svg/ayuntamiento.svg" alt="icono ayuntamiento">
+                    <h3 class="target-title sen-bold">Ayuntamientos</h3>
+                </div>
+                <div class="target-card-bottom">
+                    <p class="target-text sen-normal">
+                        Brindamos una solución robusta que asiste a los técnicos en la administración de datos
+                        relacionados con el bienestar animal. Una gestión basada en el cumplimiento de la Ley de
+                        Bienestar Animal vigente y la optimización de recursos
+                    </p>
+                    <a class="target-link sen-bold">Saber más</a>
+                </div>
+            </div>
+            <div class="target-card">
+                <div class="target-card-top">
+                    <img class="target-img" src="./images/svg/comunicacion.svg" alt="icono ayuntamiento">
+                    <h3 class="target-title sen-bold">Otras organizaciones</h3>
+                </div>
+                <div class="target-card-bottom">
+                    <p class="target-text sen-normal">
+                        Tanto si eres otro nivel de la Administración, un organismo autónomo u otra empresa,
+                        hablemos
+                    </p>
+                    <a class="target-link sen-bold">Contacto</a>
+                </div>
+            </div>
+        </section>
+        <section class="purpose" id="purpose-section">
+            <div class="purpose-container">
+                <h2 class="purpose-title sen-bold">Nuestro propósito</h2>
+                <p class="purpose-text sen-normal">
+                    Nuestra misión es simplificar y mejorar la interacción entre los <b>voluntarios</b> dedicados al
+                    cuidado de
+                    los animales y los <b>Ayuntamientos</b> encargados de implementar la <b>Ley 7/2023 de Bienestar
+                        Animal</b>.
+                </p>
+                <p class="purpose-text sen-normal">
+                    Meow Metrics nace de la necesidad de cumplir con esta legislación, promoviendo una
+                    <b>convivencia</b>
+                    sostenible y armónica entre los seres humanos y la <b>fauna urbana</b>.
+                </p>
+                <p class="purpose-text sen-normal">
+                    Nos esforzamos por ofrecer una solución que atienda los <b>requisitos legales</b>, mejore la calidad
+                    de
+                    vida de los animales y facilite la labor de <b>voluntarios</b>, quienes trabajan incansablemente en
+                    su
+                    protección.
+                </p>
+            </div>
+            <img class="purpose-img" src="./images/ejemploApp.png" alt="ejemplo de uso">
         </section>
     </main>
 
-    <footer>
-        <!-- Add your footer content here -->
+    <footer class="main-footer sen-normal">
+        <div class="footer-top">
+            <div class="footer-description">
+                <img class="footer-logo" src="../images/svg/meow zoo.svg" alt="Zoometrics logo footer">
+                <div class="footer-paragraphs">
+                    <p class="footer-text">
+                        En Meow Metrics, estamos dedicados a
+                        construir un futuro donde la gestión de la
+                        fauna urbana se realice de manera ética,
+                        inteligente y sostenible.
+                    </p>
+                    <p class="footer-text">
+                        Si compartes nuestra visión, o quieres saber
+                        más, contáctanos.
+                    </p>
+                </div>
+            </div>
+            <div class="footer-social">
+                <h3 class="social-title sen-bold">Contáctanos</h3>
+                <a class="social-link" href="mailto:info@zoo-metrics.com">info@zoo-metrics.com</a>
+                <div class="social-icons">
+                    <a class="social-icon" href="https://www.facebook.com/@zoometrics" target="_blank">
+                        <img class="social-icon-img" src="../images/svg/facebook.svg" alt="Facebook icon">
+                    </a>
+                    <a class="social-icon" href="https://www.instagram.com/zoometrics_" target="_blank">
+                        <img class="social-icon-img" src="../images/svg/instagram.svg" alt="Instagram icon">
+                    </a>
+                    <a class="social-icon" href="https://www.linkedin.com/company/zoometrics" target="_blank">
+                        <img class="social-icon-img" src="../images/svg/linkedin.svg" alt="Linkedin icon">
+                    </a>
+                    <a class="social-icon" href="https://x.com/@zoometrics" target="_blank">
+                        <img class="social-icon-img" src="../images/svg/x.svg" alt="X icon">
+                    </a>
+                    <a class="social-icon" href="https://www.youtube.com/channel/@ZooMetrics" target="_blank">
+                        <img class="social-icon-img" src="../images/svg/youtube.svg" alt="Youtube icon">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p class="legal-text">
+                © 2024 Meow Metrics. Todos los derechos reservados.
+            </p>
+            <div class="legal-links-container">
+                <a class="legal-link" href="">Política de privacidad</a>
+                <div class="legal-link-separator"></div>
+                <a class="legal-link" href="">Términos y condiciones</a>
+                <div class="legal-link-separator"></div>
+                <a class="legal-link" href="">Política de medioambiente</a>
+            </div>
+        </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="../script.js"></script>
 </body>
 
 </html>
