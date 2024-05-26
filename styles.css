@@ -120,6 +120,8 @@ body {
     line-height: 1;
     position: relative;
     height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 ol,
@@ -348,7 +350,7 @@ button {
 /* main sections */
 .main-body {
     padding-top: 120px;
-    height: 100%;
+    flex-grow: 2;
 }
 
 .main-title {
@@ -647,13 +649,13 @@ b {
 }
 
 /* Media query for 1280px header jump screen size */
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1285px) {
     .main-header {
         justify-content: center;
     }
 
     .main-body {
-        padding-top: 150px;
+        padding-top: 170px;
     }
 }
 
