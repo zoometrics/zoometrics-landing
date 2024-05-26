@@ -520,6 +520,86 @@ b {
     gap: 20px;
 }
 
+.ods {
+    background-image: url("./images/svg/Recurso\ 2.svg");
+    background-color: var(--white);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: calc(((100vw - var(--large)) / 2) + 30px);
+    padding-right: calc(((100vw - var(--large)) / 2) + 30px);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: var(--black);
+    position: relative;
+    gap: 40px;
+}
+
+.ods-title-container {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    height: 150px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.ods-title {
+    font-size: 30px;
+}
+
+.ods-title-img {
+    height: 100%;
+    width: auto;
+}
+
+.ods-cards-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.ods-card {
+    display: flex;
+    gap: 20px;
+    background-color: rgb(213, 213, 213, 0.7);
+    width: 100%;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+.ods-img {
+    height: 100%;
+    width: auto;
+}
+
+.ods-card.img-left .ods-text-container {
+    text-align: right;
+}
+
+.ods-text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-self: stretch;
+    padding: 10px;
+    gap: 10px;
+}
+
+.ods-text {
+    font-size: 20px;
+}
+
 /* Footer styles */
 .main-footer {
     background-color: var(--black);
@@ -723,13 +803,15 @@ b {
 
     .innovation-title,
     .definition-title,
-    .purpose-title {
+    .purpose-title,
+    .ods-title {
         font-size: 25px;
     }
 
     .innovation-text,
     .definition-text,
-    .purpose-text {
+    .purpose-text,
+    .ods-text {
         font-size: 16px;
     }
 
@@ -739,6 +821,19 @@ b {
 
     .purpose-img {
         max-width: 100%;
+    }
+
+    .ods-card {
+        flex-direction: column;
+    }
+
+    .ods-card.img-right {
+        flex-direction: column-reverse;
+    }
+
+    .ods-title,
+    .ods-text-container {
+        text-align: center;
     }
 
     .main-footer {
