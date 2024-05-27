@@ -1,0 +1,156 @@
+.about-us,
+.story,
+.commitment {
+    background-image: url("../images/svg/Recurso\ 2.svg");
+    background-color: var(--white);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    padding-left: calc(((100vw - var(--large)) / 2) + 30px);
+    padding-right: calc(((100vw - var(--large)) / 2) + 30px);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: var(--black);
+    position: relative;
+    gap: 20px;
+    width: 100%;
+}
+
+.about-us-container,
+.commitment-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+    max-width: 70%;
+    background-color: rgb(213, 213, 213, 0.7);
+    padding: 20px;
+}
+
+.story-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+    gap: 20px;
+    max-width: 70%;
+    background-color: rgb(213, 213, 213, 0.7);
+    padding: 20px;
+}
+
+.about-us-title,
+.commitment-title {
+    font-size: 30px;
+    text-align: left;
+}
+
+.story-title {
+    font-size: 30px;
+    text-align: right;
+}
+
+.about-us-text,
+.commitment-text {
+    font-size: 20px;
+    text-align: left;
+}
+
+.story-text {
+    font-size: 20px;
+    text-align: right;
+}
+
+.about-us-img,
+.story-img {
+    width: 30%;
+    height: auto;
+}
+
+.commitment-img-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+    background-color: rgb(213, 213, 213, 0.7);
+    height: fit-content;
+    align-self: center;
+}
+
+.commitment-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Media query for --large screen size */
+@media screen and (max-width: 1440px) {
+
+    .about-us,
+    .story,
+    .commitment {
+        padding: 20px;
+    }
+}
+
+/* Media query for 1280px header jump screen size */
+@media screen and (max-width: 1280px) {}
+
+/* Media query for --mobile screen size */
+@media screen and (max-width: 768px) {
+
+    .about-us,
+    .story,
+    .commitment {
+        flex-direction: column;
+    }
+
+    .about-us-img {
+        display: none;
+    }
+
+    .story-img,
+    .commitment-img-container {
+        width: 100%;
+    }
+
+    .about-us-container,
+    .story-container,
+    .commitment-container {
+        max-width: 100%;
+        padding: 10px;
+        align-items: flex-start;
+    }
+
+    .commitment-img-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .commitment-img {
+        width: 20%;
+        height: auto;
+    }
+
+    .about-us-title,
+    .story-title,
+    .commitment-title {
+        font-size: 25px;
+        text-align: left;
+    }
+
+    .about-us-text,
+    .story-text,
+    .commitment-text {
+        font-size: 16px;
+        text-align: left;
+    }
+
+}
+
+/* Media query for --mobile screen size */
+@media screen and (max-width: 480px) {}
