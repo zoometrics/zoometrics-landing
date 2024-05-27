@@ -1,0 +1,102 @@
+.about-us,
+.story,
+.commitment {
+    background-image: url("../images/svg/Recurso\ 2.svg");
+    background-color: var(--white);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: calc(((100vw - var(--large)) / 2) + 30px);
+    padding-right: calc(((100vw - var(--large)) / 2) + 30px);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: var(--black);
+    position: relative;
+    gap: 20px;
+    width: 100%;
+}
+
+.about-us-container,
+.story-container,
+.commitment-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    height: 100%;
+}
+
+.about-us-title,
+.story-title {
+    font-size: 30px;
+    text-align: left;
+}
+
+.commitment-title {
+    font-size: 30px;
+    text-align: right;
+}
+
+.about-us-text,
+.story-text {
+    font-size: 20px;
+    text-align: left;
+}
+
+.commitment-text {
+    font-size: 20px;
+    text-align: right;
+}
+
+.about-us-img,
+.story-img,
+.commitment-img-container {
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Media query for --large screen size */
+@media screen and (max-width: 1440px) {
+
+    .about-us {
+        padding: 20px;
+    }
+}
+
+/* Media query for 1280px header jump screen size */
+@media screen and (max-width: 1280px) {}
+
+/* Media query for --mobile screen size */
+@media screen and (max-width: 768px) {
+    .about-us {
+        flex-direction: column;
+    }
+
+    .about-us-container {
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    .about-us-title {
+        font-size: 25px;
+    }
+
+    .about-us__card-list {
+        font-size: 16px;
+    }
+
+    .about-us-img {
+        width: 100%;
+    }
+
+}
+
+/* Media query for --mobile screen size */
+@media screen and (max-width: 480px) {}
