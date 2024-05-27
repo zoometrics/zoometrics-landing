@@ -7,8 +7,7 @@
     background-repeat: no-repeat;
     background-position: center;
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     padding-left: calc(((100vw - var(--large)) / 2) + 30px);
     padding-right: calc(((100vw - var(--large)) / 2) + 30px);
@@ -18,6 +17,7 @@
     position: relative;
     gap: 20px;
     width: 100%;
+    height: 300px;
 }
 
 .about-us-container,
@@ -25,11 +25,13 @@
 .commitment-container {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;
     gap: 20px;
-    width: 100%;
+    max-width: 60%;
     height: 100%;
+    background-color: rgb(213, 213, 213, 0.7);
+    padding: 20px;
 }
 
 .about-us-title,
@@ -57,9 +59,8 @@
 .about-us-img,
 .story-img,
 .commitment-img-container {
-    width: 50%;
+    max-width: 30%;
     height: 100%;
-    object-fit: cover;
 }
 
 /* Media query for --large screen size */
