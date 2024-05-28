@@ -44,7 +44,7 @@
             "density": "4.0"
         }
     ],
-    "start_url": "./",
+    "start_url": "../",
     "background_color": "#ffffff",
     "display": "standalone",
     "theme_color": "#009fe3",
