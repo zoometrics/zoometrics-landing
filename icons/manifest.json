@@ -1,6 +1,6 @@
 {
-    "short_name": "Zoometrics",
-    "name": "Zoometrics, smart metrics for smart cities",
+    "short_name": "Zoo Metrics",
+    "name": "Zoo Metrics, smart metrics for smart cities",
     "icons": [
         {
             "src": "icons-vector.svg",
@@ -44,11 +44,11 @@
             "density": "4.0"
         }
     ],
-    "start_url": "https://juanmata42.github.io/zoometrics-landing/",
+    "start_url": "./",
     "background_color": "#ffffff",
     "display": "standalone",
     "theme_color": "#009fe3",
-    "description": "Zoometrics Landing Page",
+    "description": "Smart metrics for smart cities",
     "screenshots": [
         {
             "src": "../images/contrasteMMpersa.jpg",
