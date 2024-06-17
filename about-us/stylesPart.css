@@ -8,11 +8,11 @@
     background-position: center;
     display: flex;
     justify-content: space-between;
-    align-items: stretch;
-    padding-left: calc(((100vw - var(--large)) / 2) + 30px);
-    padding-right: calc(((100vw - var(--large)) / 2) + 30px);
-    padding-top: 20px;
-    padding-bottom: 20px;
+    align-items: center;
+    padding-left: calc(((100vw - var(--largest)) / 2) + 30px);
+    padding-right: calc(((100vw - var(--largest)) / 2) + 30px);
+    padding-top: 100px;
+    padding-bottom: 100px;
     color: var(--black);
     position: relative;
     gap: 20px;
@@ -29,6 +29,7 @@
     max-width: 70%;
     background-color: rgb(213, 213, 213, 0.7);
     padding: 20px;
+    height: fit-content;
 }
 
 .story-container {
@@ -40,6 +41,7 @@
     max-width: 70%;
     background-color: rgb(213, 213, 213, 0.7);
     padding: 20px;
+    height: fit-content;
 }
 
 .about-us-title,
@@ -66,7 +68,7 @@
 
 .about-us-img,
 .story-img {
-    width: 30%;
+    width: 40%;
     height: auto;
 }
 
@@ -87,12 +89,18 @@
 }
 
 /* Media query for --large screen size */
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 1920px) {
 
-    .about-us,
-    .story,
-    .commitment {
+    .about-us {
+        padding: 100px 20px 20px 20px;
+    }
+
+    .story {
         padding: 20px;
+    }
+
+    .commitment {
+        padding: 20px 20px 100px 20px;
     }
 }
 
@@ -106,6 +114,9 @@
     .story,
     .commitment {
         flex-direction: column;
+        height: auto;
+        min-height: auto;
+        padding: 30px 20px;
     }
 
     .about-us-img {

@@ -8,15 +8,16 @@
     flex-direction: row-reverse;
     justify-content: center;
     align-items: center;
-    padding-left: calc(((100vw - var(--large)) / 2) + 30px);
-    padding-right: calc(((100vw - var(--large)) / 2) + 30px);
+    padding-left: calc(((100vw - var(--largest)) / 2) + 30px);
+    padding-right: calc(((100vw - var(--largest)) / 2) + 30px);
     padding-top: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 100px;
     color: var(--black);
     position: relative;
     gap: 20px;
     width: 100%;
     height: 100%;
+    min-height: 90vh;
 }
 
 .app-preview-img {
@@ -64,10 +65,10 @@
 }
 
 /* Media query for --large screen size */
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 1920px) {
 
     .app-preview {
-        padding: 20px;
+        padding: 100px 20px;
     }
 }
 
@@ -78,6 +79,9 @@
 @media screen and (max-width: 768px) {
     .app-preview {
         flex-direction: column;
+        height: auto;
+        min-height: auto;
+        padding: 30px 20px;
     }
 
     .app-preview-container {
