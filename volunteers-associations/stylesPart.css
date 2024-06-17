@@ -79,6 +79,9 @@
 @media screen and (max-width: 768px) {
     .app-preview {
         flex-direction: column;
+        height: auto;
+        min-height: auto;
+        padding: 30px 20px;
     }
 
     .app-preview-container {

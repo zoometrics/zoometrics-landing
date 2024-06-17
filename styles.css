@@ -391,6 +391,7 @@ button {
 .target-title {
     font-size: 30px;
 }
+
 .innovation-text,
 .definition-text,
 .purpose-text,
@@ -795,6 +796,7 @@ b {
     .definition,
     .purpose {
         height: auto;
+        min-height: auto;
     }
 
     .purpose {
@@ -805,20 +807,23 @@ b {
     .definition-container,
     .purpose-container {
         max-width: 100%;
-        padding: 10px;
+        padding: 30px;
     }
 
     .innovation-title,
     .definition-title,
     .purpose-title,
-    .ods-title {
+    .ods-title,
+    .target-title {
         font-size: 25px;
     }
 
     .innovation-text,
     .definition-text,
     .purpose-text,
-    .ods-text {
+    .ods-text,
+    .target-text,
+    .target-link {
         font-size: 16px;
     }
 
@@ -840,7 +845,7 @@ b {
 
     .ods-title,
     .ods-text-container {
-        text-align: center;
+        text-align: center !important;
     }
 
     .main-footer {

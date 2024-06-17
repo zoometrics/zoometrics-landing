@@ -67,7 +67,8 @@
     text-align: center;
 }
 
-.contact-text, .contact-email {
+.contact-text,
+.contact-email {
     font-size: 20px;
     text-align: center;
 }
@@ -87,6 +88,11 @@
 
 /* Media query for --mobile screen size */
 @media screen and (max-width: 768px) {
+    .contact {
+        height: auto;
+        min-height: 100%;
+        padding: 30px 20px;
+    }
 
     .contact-header-title {
         font-size: 25px;
@@ -107,7 +113,9 @@
     .contact-container {
         flex-direction: column;
     }
-    .container-left, .container-right {
+
+    .container-left,
+    .container-right {
         width: 100%;
     }
 }
