@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Capa_2" data-name="Capa 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #009fe3;
+      }
+
+      .cls-1, .cls-2 {
+        stroke-width: 0px;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <g id="Capa_1-2" data-name="Capa 1">
+    <g>
+      <rect class="cls-1" width="500" height="500"/>
+      <g>
+        <g>
+          <path class="cls-2" d="M250,212.54c-25.49,0-46.15,20.66-46.15,46.15v99.07h92.29v-99.07c0-25.49-20.66-46.15-46.15-46.15Z"/>
+          <circle class="cls-2" cx="250" cy="173.62" r="31.38"/>
+        </g>
+        <g>
+          <path class="cls-2" d="M344.64,249.61c-18.98,0-34.37,15.39-34.37,34.37v73.78h68.74v-73.78c0-18.98-15.39-34.37-34.37-34.37Z"/>
+          <circle class="cls-2" cx="344.64" cy="220.62" r="23.37"/>
+        </g>
+        <g>
+          <path class="cls-2" d="M155.36,249.61c-18.98,0-34.37,15.39-34.37,34.37v73.78h68.74v-73.78c0-18.98-15.39-34.37-34.37-34.37Z"/>
+          <circle class="cls-2" cx="155.36" cy="220.62" r="23.37"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
