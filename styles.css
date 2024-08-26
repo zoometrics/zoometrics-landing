@@ -579,7 +579,7 @@ b {
     color: var(--black);
     position: relative;
     gap: 20px;
-    min-height: 90vh;
+    /*min-height: 90vh;*/
 }
 
 
