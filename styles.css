@@ -737,7 +737,7 @@ b {
 .ods-text {
     font-size: 20px;
 }
-.ods-text {
+.ods-text-flip {
     display: none;
 }
 /* Footer styles */
@@ -915,7 +915,7 @@ b {
         position: absolute;
         height: 40px;
         width: 30px;
-        right: 10px;
+        right: 30px;
     }
 
     .main-header .header-nav .nav-link {
