@@ -37,7 +37,7 @@
 
 <body>
     <header class="main-header sen-normal">
-        <a href="#top"><img class="header-logo logo" src="./images/svg/logoiconos.svg" alt="Zoo Metrics logo"></a>
+        <a href="#top"><img class="header-logo logo" src="./images/svg/logoiconos.svg" alt="Zoo Metrics logo"><img class="header-logo-white logo" src="./images/svg/logoiconos white.svg" alt="Zoo Metrics logo"></a>
         <div class="hamburger-menu sen-normal">
             <input class="hamburguer-button" type="checkbox" id="menu_checkbox">
             <label class="hamburguer-label" for="menu_checkbox">
@@ -68,14 +68,14 @@
         </nav>
     </header>
     <main class="main-body">
-        <section class="innovation" id="innovation-section">
-            <div class="innovation-container">
-                <h2 class="innovation-title sen-bold">Innovación Tecnológica para el Bienestar Animal</h2>
-                <p class="innovation-text sen-normal">
-                    Meow Metrics empodera a los voluntarios y Ayuntamientos con herramientas gratuitas para la gestión
-                    efectiva de colonias de gatos ferales.
-                </p>
-            </div>
+        <section class="Hero">
+            <div class="Hero__content">
+                <h2 class="Hero__title">Innovación Tecnológica para el Bienestar Animal</h2>
+                <p class="Hero__subtitle">Meow Metrics empodera a los voluntarios y Ayuntamientos con herramientas gratuitas para la gestión
+                    efectiva de colonias de gatos ferales.</p>
+                </div>
+            <div class="Hero__image" id="Hero__image"></div>
+            <div class="Hero__mask"></div>
         </section>
         <section class="definition" id="definition-section">
             <img class="definition-img" src="./images/3gatos-removebg.png" alt="tres gatos">
@@ -101,6 +101,7 @@
                 <div class="target-card-top">
                     <img class="target-img" src="./images/svg/voluntario.svg" alt="icono voluntario">
                     <h3 class="target-title sen-bold">Voluntarios y Asociaciones</h3>
+                    <a class="target-link-top sen-bold" href="./volunteers-associations/">Saber más</a>
                 </div>
                 <div class="target-card-bottom">
                     <p class="target-text sen-normal">
@@ -115,6 +116,7 @@
                 <div class="target-card-top">
                     <img class="target-img" src="./images/svg/ayuntamiento.svg" alt="icono ayuntamiento">
                     <h3 class="target-title sen-bold">Ayuntamientos</h3>
+                    <a class="target-link-top sen-bold" href="./volunteers-associations/">Saber más</a>
                 </div>
                 <div class="target-card-bottom">
                     <p class="target-text sen-normal">
@@ -129,6 +131,7 @@
                 <div class="target-card-top">
                     <img class="target-img" src="./images/svg/comunicacion.svg" alt="icono ayuntamiento">
                     <h3 class="target-title sen-bold">Otras organizaciones</h3>
+                    <a class="target-link-top sen-bold" href="./volunteers-associations/">Saber más</a>
                 </div>
                 <div class="target-card-bottom">
                     <p class="target-text sen-normal">
@@ -138,7 +141,9 @@
                     <a class="target-link sen-bold" href="./contact/">Contacto</a>
                 </div>
             </div>
+
         </section>
+        
         <section class="purpose" id="purpose-section">
             <div class="purpose-container">
                 <h2 class="purpose-title sen-bold">Nuestro propósito</h2>
@@ -166,7 +171,7 @@
         <section class="ods" id="ods-section">
             <div class="ods-title-container">
                 <img class="ods-title-img" src="./images/global-goals-transparent.png" alt="icono ODS">
-                <h2 class="ods-title sen-bold">Alcanzando objetivos de desarollo sostenible</h2>
+                <h2 class="ods-title-header sen-bold">Alcanzando objetivos de desarollo sostenible</h2>
             </div>
             <div class="ods-cards-container">
                 <div class="ods-card img-left">
@@ -181,6 +186,13 @@
                             su Ordenanza local y el Protocolo CER en vigor.
                         </p>
                     </div>
+                    <p class="ods-text-flip sen-normal">
+                        <b>Formación y capacitación de los voluntarios:</b> Meow Metrics incorpora módulos de
+                        formación
+                        para los voluntarios de su localidad, de forma que estén capacitados para gestionar las
+                        colonias mediante buenas prácticas para los gatos y para la convivencia vecinal, respetando
+                        su Ordenanza local y el Protocolo CER en vigor.
+                    </p>
                 </div>
                 <div class="ods-card img-right">
                     <div class="ods-text-container">
@@ -193,6 +205,12 @@
                         </p>
                     </div>
                     <img class="ods-img" src="./images/ods9.png" alt="icono ODS 9">
+                    <p class="ods-text-flip sen-normal">
+                        <b>Innovación en la Gestión de Fauna Urbana:</b> Meow Metrics introduce una solución
+                        tecnológica innovadora para la gestión de colonias de gatos ferales, mejorando la
+                        infraestructura de bienestar animal y promoviendo la adopción de tecnologías inteligentes en
+                        la gestión de ciudades.
+                    </p>
                 </div>
                 <div class="ods-card img-left">
                     <img class="ods-img" src="./images/ods11.png" alt="icono ODS 11">
@@ -204,6 +222,11 @@
                             sostenibles. Así, mejora la convivencia entre los habitantes de la ciudad y la fauna local.
                         </p>
                     </div>
+                    <p class="ods-text-flip sen-normal">
+                        <b>Promoción de Comunidades Seguras y Sostenibles:</b> Al facilitar la gestión ética de las
+                        colonias de gatos ferales, Meow Metrics contribuye a crear entornos urbanos más seguros y
+                        sostenibles. Así, mejora la convivencia entre los habitantes de la ciudad y la fauna local.
+                    </p>
                 </div>
                 <div class="ods-card img-right">
                     <div class="ods-text-container">
@@ -215,6 +238,11 @@
                         </p>
                     </div>
                     <img class="ods-img" src="./images/ods15.png" alt="icono ODS 15">
+                    <p class="ods-text-flip sen-normal">
+                        <b>Protección de la Vida Terrestre:</b> Mediante la gestión ética de las colonias de gatos
+                        ferales, Meow Metrics. Su enfoque en la educación y la participación de la comunidad refleja
+                        un compromiso con la preservación de la biodiversidad y el bienestar animal.
+                    </p>
                 </div>
                 <div class="ods-card img-left">
                     <img class="ods-img" src="./images/ods17.jpg" alt="icono ODS 17">
@@ -226,6 +254,11 @@
                             alcanzar varios ODS, así como mejorar la convivencia y fomentar la sostenibilidad.
                         </p>
                     </div>
+                    <p class="ods-text-flip sen-normal">
+                        <b>Mediante la formación de alianzas</b> entre Ayuntamiento, voluntarios y vecinos, Meow
+                        Metrics facilita la participación ciudadana y la colaboración, lo cual es fundamental para
+                        alcanzar varios ODS, así como mejorar la convivencia y fomentar la sostenibilidad.
+                    </p>
                 </div>
             </div>
         </section>
@@ -283,7 +316,7 @@
             </div>
         </div>
     </footer>
-
+    <script src="script-sticky.js"></script>
     <script src="script.js"></script>
 </body>
 
