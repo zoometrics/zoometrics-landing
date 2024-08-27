@@ -1,7 +1,5 @@
-.about-us,
-.story,
-.commitment {
-    background-image: url("../images/svg/Recurso\ 2.svg");
+.story{
+    background-image: url("../images/svg/background\ purple.svg");
     background-color: var(--white);
     background-size: cover;
     background-repeat: no-repeat;
@@ -19,7 +17,57 @@
     width: 100%;
 }
 
-.about-us-container,
+.about-us{
+    background-image: url("../images/svg/background\ blue.svg");
+    background-color: var(--white);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: calc(((100vw - var(--largest)) / 2) + 30px);
+    padding-right: calc(((100vw - var(--largest)) / 2) + 30px);
+    padding-top: 100px;
+    padding-bottom: 100px;
+    color: var(--black);
+    position: relative;
+    gap: 20px;
+    width: 100%;
+}
+
+.commitment{
+    background-image: url("../images/svg/background\ green.svg");
+    background-color: var(--white);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: calc(((100vw - var(--largest)) / 2) + 30px);
+    padding-right: calc(((100vw - var(--largest)) / 2) + 30px);
+    padding-top: 100px;
+    padding-bottom: 100px;
+    color: var(--black);
+    position: relative;
+    gap: 20px;
+    width: 100%;
+}
+
+.about-us-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+    max-width: 70%;
+    background-color: var(--white);
+    padding: 20px;
+    height: fit-content;
+    opacity: 80%;
+}
+
 .commitment-container {
     display: flex;
     flex-direction: column;
@@ -27,9 +75,10 @@
     align-items: flex-start;
     gap: 20px;
     max-width: 70%;
-    background-color: rgb(213, 213, 213, 0.7);
+    background-color: var(--white);
     padding: 20px;
     height: fit-content;
+    opacity: 80%;
 }
 
 .story-container {
@@ -39,9 +88,10 @@
     align-items: flex-end;
     gap: 20px;
     max-width: 70%;
-    background-color: rgb(213, 213, 213, 0.7);
+    background-color: var(--white);
     padding: 20px;
     height: fit-content;
+    opacity: 80%;
 }
 
 .about-us-title,
@@ -120,9 +170,7 @@
         padding: 30px 20px;
     }
 
-    .about-us-img {
-        display: none;
-    }
+    
 
     .story-img,
     .commitment-img-container {
