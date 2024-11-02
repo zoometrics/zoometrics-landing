@@ -404,7 +404,6 @@ button {
     font-family: "Sen", sans-serif;
     font-weight: 900;
     margin: 0;
-    text-shadow: 0px 0px 8px black;
     font-size: 3em;
     line-height: 1em;
 }
@@ -413,7 +412,6 @@ button {
     font-family: "Sen", sans-serif;
     opacity: 0.85;
     margin-top: 0.5em;
-    text-shadow: 0px 0px 8px black;
     font-size: 1.5em;
 }
 
@@ -721,16 +719,16 @@ b {
     width: auto;
 }
 
-.ods-card.img-left .ods-text-container {
+/* .ods-card.img-left .ods-text-container {
     text-align: right;
-}
+} */
 
 .ods-text-container {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-self: stretch;
-    padding: 10px;
+    padding: 40px 10px 40px 0;
     gap: 10px;
 }
 
