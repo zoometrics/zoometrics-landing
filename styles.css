@@ -719,10 +719,6 @@ b {
     width: auto;
 }
 
-/* .ods-card.img-left .ods-text-container {
-    text-align: right;
-} */
-
 .ods-text-container {
     display: flex;
     flex-direction: column;
